@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2bf9e2b-2f4f-4630-9a44-13f81e520722" name="Changes" comment="ДЗ-3" />
+    <list default="true" id="b2bf9e2b-2f4f-4630-9a44-13f81e520722" name="Changes" comment="ДЗ-3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Lesson_3/AddComent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Lesson_3/AddComent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Lesson_3/DeleteComent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Lesson_3/DeleteComent.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +43,20 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Surfing">
+  <component name="RunManager" selected="Application.DeleteComent">
+    <configuration name="AddComent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Lesson_3.AddComent" />
+      <module name="WebUI-Lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.Lesson_3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Lesson_3.App" />
       <module name="WebUI-Lessons" />
@@ -66,6 +83,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DeleteComent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Lesson_3.DeleteComent" />
+      <module name="WebUI-Lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.Lesson_3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Surfing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Lesson_3.Surfing" />
       <module name="WebUI-Lessons" />
@@ -81,6 +111,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DeleteComent" />
+        <item itemvalue="Application.AddComent" />
         <item itemvalue="Application.Surfing" />
         <item itemvalue="Application.AppLogIn" />
         <item itemvalue="Application.App" />
@@ -124,7 +156,28 @@
       <option name="project" value="LOCAL" />
       <updated>1669144448208</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ДЗ-3">
+      <created>1669144560490</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669144560490</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ДЗ-3">
+      <created>1669144604525</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669144604525</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ДЗ-3">
+      <created>1669363118536</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669363118536</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
