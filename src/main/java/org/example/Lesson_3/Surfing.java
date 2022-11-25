@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Surfing {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
@@ -40,7 +40,7 @@ public class Surfing {
         logo.click();
 
 
-
-        //driver.quit();
+        Thread.sleep(20000);
+        driver.quit();
     }
 }

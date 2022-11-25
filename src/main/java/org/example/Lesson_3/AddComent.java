@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class AddComent {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
@@ -41,7 +41,7 @@ public class AddComent {
         WebElement submit = driver.findElement(By.xpath("//button[@name='submitpost']"));
         submit.click();
 
-
-        //driver.quit();
+        Thread.sleep(20000);
+        driver.quit();
     }
 }

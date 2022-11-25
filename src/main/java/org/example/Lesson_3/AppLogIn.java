@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.concurrent.TimeUnit;
 
 public class AppLogIn {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
@@ -33,7 +33,7 @@ public class AppLogIn {
 
 
 
-
-        //driver.quit();
+        Thread.sleep(20000);
+        driver.quit();
     }
 }
