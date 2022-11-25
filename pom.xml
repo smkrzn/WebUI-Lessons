@@ -34,5 +34,10 @@
       <version>${webdrivermanager.version}</version>
       <scope>compile</scope>
     </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-devtools-v107</artifactId>
+      <version>4.6.0</version>
+    </dependency>
   </dependencies>
 </project>
