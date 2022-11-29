@@ -5,6 +5,7 @@
       <option name="excludeList">
         <list>
           <option value="io.github.bonigarcia:webdrivermanager" />
+          <option value="org.slf4j:slf4j-api" />
         </list>
       </option>
     </inspection_tool>

@@ -21,7 +21,7 @@
     <aspectj.version>1.8.13</aspectj.version>
     <webdrivermanager.version>5.0.3</webdrivermanager.version>
     <allure.version>2.15.0</allure.version>
-    <allure-maven.version>2.10.0</allure-maven.version>
+    <allure-maven.version>2.12.0</allure-maven.version>
     <maven.surefire.plugin>2.22.0</maven.surefire.plugin>
 
   </properties>
@@ -63,18 +63,6 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>io.qameta.allure</groupId>
-      <artifactId>allure-junit5</artifactId>
-      <version>${allure.version} </version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>commons-io</groupId>
-      <artifactId>commons-io</artifactId>
-      <version>2.6</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
       <version>1.2.3</version>
@@ -87,37 +75,16 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>io.qameta.allure</groupId>
-      <artifactId>allure-java-commons</artifactId>
-      <version>2.15.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-java</artifactId>
-      <version>7.1.0</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-junit</artifactId>
-      <version>7.1.0</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.codeborne</groupId>
-      <artifactId>selenide</artifactId>
-      <version>6.1.2</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>org.junit.vintage</groupId>
       <artifactId>junit-vintage-engine</artifactId>
       <version>5.7.0</version>
     </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>2.0.5</version>
+    </dependency>
   </dependencies>
-
-
   <build>
     <plugins>
       <plugin>
@@ -161,7 +128,6 @@
       </plugin>
     </plugins>
   </build>
-
 
 
 </project>
