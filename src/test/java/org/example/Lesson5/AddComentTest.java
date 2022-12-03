@@ -35,7 +35,7 @@ public class AddComentTest {
         WebElement webButtonIn = driver.findElement(By.cssSelector(".b-loginform-btn.b-loginform-btn--login.b-loginform-btn--auth.b-loginform-btn--center"));
         webButtonIn.click();
 
-        String coment = "test110";
+        String coment = "tes05";
         WebElement userMenu = driver.findElement(By.cssSelector(".s-nav-item__name"));
         userMenu.click();
         WebElement addComent = driver.findElement(By.cssSelector(".actions-entryunit__text"));

@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2bf9e2b-2f4f-4630-9a44-13f81e520722" name="Changes" comment="5">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/Lesson5/AddComentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/Lesson5/LoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/Lesson5/ShopDeleteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/Lesson5/ShopTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Lesson4/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Lesson4/Triangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Lesson4/TriangleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Lesson5/AbstractTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Lesson5/SurfingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Lesson5/SurfingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Lesson5/AddComentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Lesson5/AddComentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,20 +38,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kyzja/IdeaProjects/web_test-master&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/kyzja/IdeaProjects/WebUI-Lessons",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -64,7 +60,7 @@
       <recent name="org.example.Lesson4" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AddComentTest">
+  <component name="RunManager" selected="JUnit.ShopTest.shop">
     <configuration name="AddComentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WebUI-Lessons" />
       <extension name="coverage">
@@ -96,7 +92,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShopDeleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WebUI-Lessons" />
       <extension name="coverage">
         <pattern>
@@ -105,29 +101,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.Lesson5" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Lesson5.LoginTest" />
-      <option name="METHOD_NAME" value="login" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SurfingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WebUI-Lessons" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.Lesson5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.Lesson5" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Lesson5.SurfingTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Lesson5.ShopDeleteTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SurfingTest.suerfing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShopDeleteTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WebUI-Lessons" />
       <extension name="coverage">
         <pattern>
@@ -136,8 +116,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.Lesson5" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Lesson5.SurfingTest" />
-      <option name="METHOD_NAME" value="suerfing" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Lesson5.ShopDeleteTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopTest.shop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WebUI-Lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.Lesson5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.Lesson5" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Lesson5.ShopTest" />
+      <option name="METHOD_NAME" value="shop" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShopTest.shop" />
+        <item itemvalue="JUnit.ShopDeleteTest" />
+        <item itemvalue="JUnit.ShopDeleteTest.delete" />
         <item itemvalue="JUnit.AddComentTest" />
         <item itemvalue="JUnit.AddComentTest.sddComent" />
-        <item itemvalue="JUnit.LoginTest.login" />
-        <item itemvalue="JUnit.SurfingTest.suerfing" />
-        <item itemvalue="JUnit.SurfingTest" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669994934311</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="5">
+      <created>1670000701045</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670000701045</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
