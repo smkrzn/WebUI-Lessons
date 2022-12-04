@@ -1,6 +1,8 @@
 package org.example.Lesson5;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.example.Lesson_6.AddComentPage;
+import org.example.Lesson_6.LoginPage;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,14 +10,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
 
 public class AddComentTest {
 
+    private static String coment = "tes067";
     @Test
-    public void sddComent(){
+    public void addComent() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
@@ -23,30 +27,16 @@ public class AddComentTest {
         options.addArguments("start-maximized");
 
         WebDriver driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://www.livejournal.com");
 
-        WebElement webInput = driver.findElement(By.cssSelector(".s-header-item__link--login"));
-        webInput.click();
-        WebElement webLogin = driver.findElement(By.id("user"));
-        webLogin.sendKeys("serg_test");
-        WebElement webPassword = driver.findElement(By.id("lj_loginwidget_password"));
-        webPassword.sendKeys("Gb131313");
-        WebElement webButtonIn = driver.findElement(By.cssSelector(".b-loginform-btn.b-loginform-btn--login.b-loginform-btn--auth.b-loginform-btn--center"));
-        webButtonIn.click();
+        new LoginPage(driver).login();
 
-        String coment = "tes05";
-        WebElement userMenu = driver.findElement(By.cssSelector(".s-nav-item__name"));
-        userMenu.click();
-        WebElement addComent = driver.findElement(By.cssSelector(".actions-entryunit__text"));
-        addComent.click();
-        WebElement text = driver.findElement(By.xpath("//span[@data-slate-node='text']"));
-        text.sendKeys(coment);
-        WebElement submit = driver.findElement(By.xpath("//button[@name='submitpost']"));
-        submit.click();
+        new AddComentPage(driver).addComent(this.coment);
+
         WebElement com = driver.findElement(By.cssSelector(".mdspost-comment__body"));
         String textComent = com.getText();
-        assertEquals(coment,textComent);
+        assertEquals(this.coment,textComent);
 
         driver.quit();
     }

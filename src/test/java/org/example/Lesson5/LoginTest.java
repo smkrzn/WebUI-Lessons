@@ -1,6 +1,7 @@
 package org.example.Lesson5;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.example.Lesson_6.LoginPage;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,14 +9,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class LoginTest {
 
+
     @Test
-    public void login() {
+    public void login() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
@@ -23,20 +27,14 @@ public class LoginTest {
         options.addArguments("start-maximized");
 
         WebDriver driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://www.livejournal.com");
 
-        WebElement webInput = driver.findElement(By.cssSelector(".s-header-item__link--login"));
-        webInput.click();
-        WebElement webLogin = driver.findElement(By.id("user"));
-        webLogin.sendKeys("serg_test");
-        WebElement webPassword = driver.findElement(By.id("lj_loginwidget_password"));
-        webPassword.sendKeys("Gb131313");
-        WebElement webButtonIn = driver.findElement(By.cssSelector(".b-loginform-btn.b-loginform-btn--login.b-loginform-btn--auth.b-loginform-btn--center"));
-        webButtonIn.click();
+        new LoginPage(driver).login();
         WebElement userName = driver.findElement(By.cssSelector(".s-header-item__link--user"));
-        String name = userName.getAttribute("href");
-        assertEquals("https://serg-test.livejournal.com/", name);
+        String userURL = userName.getAttribute("href");
+        assertEquals("https://serg-test.livejournal.com/", userURL);
+
 
         driver.quit();
     }
