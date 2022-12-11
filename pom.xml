@@ -20,8 +20,8 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <aspectj.version>1.8.13</aspectj.version>
     <webdrivermanager.version>5.0.3</webdrivermanager.version>
-    <allure.version>2.15.0</allure.version>
-    <allure-maven.version>2.12.0</allure-maven.version>
+    <allure.version>2.12.0</allure.version>
+    <allure-maven.version>2.20.1</allure-maven.version>
     <maven.surefire.plugin>2.22.0</maven.surefire.plugin>
 
   </properties>
@@ -84,6 +84,18 @@
       <artifactId>slf4j-api</artifactId>
       <version>2.0.5</version>
     </dependency>
+    <dependency>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-junit5</artifactId>
+      <version>${allure.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-java-commons</artifactId>
+      <version>2.15.0</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
@@ -113,17 +125,17 @@
           <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
-            <version>1.8.13</version>
+            <version>${aspectj.version}</version>
           </dependency>
         </dependencies>
       </plugin>
       <plugin>
         <groupId>io.qameta.allure</groupId>
         <artifactId>allure-maven</artifactId>
-        <version> ${allure-maven.version} </version>
+        <version>${allure.version}</version>
         <configuration>
-
-          <buildDirectory>C:\Projects\web_test</buildDirectory>
+          <reportVersion>2.4.1</reportVersion>
+          <buildDirectory>C:\Users\kyzja\IdeaProjects\WebUI-Lessons</buildDirectory>
         </configuration>
       </plugin>
     </plugins>
